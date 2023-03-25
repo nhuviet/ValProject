@@ -1,12 +1,13 @@
 function CheckAuth(){
     let user = getCookie("user");
+    let obj = JSON.parse(user);
     if (user != "") {
-        alert("Welcome again " + user);
+        alert("Welcome again " + obj.username);
     } 
     else {
-        window.location = "login.html"
+        window.location = "login.html";
         if (user != "" && user != null) {
-          setCookie("username", user, 30);
+          setCookie("user", user, 30);
         }
     }
     
@@ -39,10 +40,7 @@ function setCookie(key,value,exdays) {
     let pass = document.getElementById("password").value;
     const userLogin = {username: un, pass: pass};
     const myJSON = JSON.stringify(userLogin);
-    setCookie("userLogin",myJSON,10);
+    setCookie("user",myJSON,10);
   }
 
 
-/*        if (user != "" && user != null) {
-            setCookie("username", user, 30);
-        }*/
