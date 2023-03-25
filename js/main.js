@@ -1,14 +1,9 @@
 function CheckAuth(){
-    let user = getCookie("user");
-    if (user != "") {
-        alert("Welcome again " + user);
+    let user = getCookie("userLogin");
+    if (user == "" || user == null) {
+      window.location = "login.html";
+      setCookie("userLogin", user, 30);
     } 
-    else {
-        window.location = "login.html"
-        if (user != "" && user != null) {
-          setCookie("username", user, 30);
-        }
-    }
     
 }
 function setCookie(key,value,exdays) {
@@ -40,6 +35,7 @@ function setCookie(key,value,exdays) {
     const userLogin = {username: un, pass: pass};
     const myJSON = JSON.stringify(userLogin);
     setCookie("userLogin",myJSON,10);
+    window.location = "index.html";
   }
 
 
