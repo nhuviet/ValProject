@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Fontawaresome CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="/css/product-item.css">
+    <title>ValLineUp - Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Home</title>
+</head>
+    <body onload="CheckAuth()">
+        <ul class="nav nav-pills bg-dark d-flex justify-content-center">
+            <li class="nav-item" >
+                <img src="./resource/page-logo.png" style="height: 50px;"/>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Lineup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="#">Register</a>
+              </li>
+          </ul>
+
+        <main>
+            <div class="Container">
+                <div class="info-graphic">
+                    <div class="bd-example">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                            <div class="carouselSmall">
+                                <ol class="carousel-indicators" id="carousel-indi">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active" id="thumbnail"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+                                </ol>
+                                <a class="carousel-control-prev" href="#carousel-indi" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carousel-indi" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+    
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="resource/Map/ascent-featured.png" class="d-block w-100 darkened-image" alt="slide 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>ASCENT</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="resource/Map/bind-featured.png" class="d-block w-100 darkened-image" alt="slide 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>BIND</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="resource/Map/breeze-featured_v1.png" class="d-block w-100 darkened-image" alt="slide 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>BREEZE</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="resource/Map/Fracture-featured.png" class="d-block w-100 darkened-image" alt="slide 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>FRACTURE</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="resource/Map/haven-featured.png" class="d-block w-100 darkened-image" alt="slide 4">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>HAVEN</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="resource/Map/Icebox_transparentbg_for_Web.png" class="d-block w-100 darkened-image" alt="slide 5">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>ICEBOX</h1>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="resource/Map/split-featured.png" class="d-block w-100 darkened-image" alt="slide 6">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h1>SPLIT</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" placeholder="Email address"/>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <!-- <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section> -->
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <!-- <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#!" class="text-uppercase text-white">Home</a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#!" class="text-uppercase text-white">LineUp</a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#!" class="text-uppercase text-white">Contact</a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <a href="#!" class="text-uppercase text-white">Login</a>
+          </div>
+        </div> -->
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <a class="text-white" href="https://facebook.com/">Buy me a Coffee</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+            <script src="./js/main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+    </body> 
+</html>
