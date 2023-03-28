@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+        padding: 20px;
+    }
+
+  .container {
+    display: grid;
+    row-gap: 10px;
+    height: 50vh;
+    column-gap: 10px;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "map agent agent"
+    "map agent agent"
+    "footer footer footer"
+    ;
+  }
+
+  .box {
+    border: 1px solid red;
+    background-color: gold;
+  }
+
+  .navbar {
+    grid-area: navbar;
+
+  }
+
+  .map {
+    grid-area:map;
+    
+  }
+  
+  .agent {
+    grid-area: agent;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+  }
+
+
+  .footer {
+    grid-area:footer;
+  }
+
+  .agent-icon {
+    border: 1px solid green;
+    width: fit-content;
+    height: 50px;
+    background-color: green;
+  }
+
+  .video {
+    border: 1px solid blue;
+    
+  }
+
+  @media (max-width:500px){
+    .container {
+        display: grid;
+    row-gap: 5px;
+    height: 100vh;
+    column-gap: 5px;
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "map map map"
+    "agent agent agent"
+    "footer footer footer"
+    ;
+
+    }
+  }
