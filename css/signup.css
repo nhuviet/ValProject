@@ -1,0 +1,66 @@
+form {
+    background: transparent;
+    opacity: 4;
+    border-radius: 13px;
+    border:solid gray;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   }
+   form h1 {
+       text-align: center;
+   }
+   
+   @media only screen and (min-width: 368px) {
+       .container{
+           width: 700px;
+       }
+   }
+   
+   .container {
+       margin-top: 6vw;
+   }
+   
+   body {
+       background-image: url("/resource/valorant-background.jpg");
+       /* width: 100vw;
+       height: 100vw; */
+       background-repeat: no-repeat;
+       background-size: cover;
+       font-family: Roboto,Arial,georgia, sans-serif;
+   }
+   @media (max-width:577px){
+    body {
+        /* background-size: cover; */
+        height: 100vh;
+        background-position: center;
+    }
+    .container {
+        width: 100vw;
+        height: 100vh;
+        padding-top: 30vw;
+        
+    }
+}
+
+@media  (min-width:577px ){
+    body {
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+        padding-top: 8vh;
+    }
+    .container{
+        width: 700px;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.fa-eye {
+    position: absolute;
+    top: 75%;
+    right: 41px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.info-graphic {
+    width: 98.3vw;;
+    height: auto;
+}
+
+.darkened-image {
+    filter: brightness(0.7);
+}
+body {
+    font-family:     arial, Georgia, 'Times New Roman', Times, serif;
+}
+
+@media (max-width:770px){
+    h1 {
+        font-size: 170%;
+    }
+}

@@ -43,4 +43,14 @@ function setCookie(key,value,exdays) {
     setCookie("user",myJSON,10);
   }
 
+  $("#spass").click(function(){
+    event.preventDefault();
+   var attr = $(".password").attr("type");
+   if(attr == "text"){
+    $(".password").attr("type","password");
+   }
+   else {
+    $(".password").attr("type","text");
+   }
+  });
 
