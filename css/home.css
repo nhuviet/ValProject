@@ -15,3 +15,14 @@ body {
         font-size: 170%;
     }
 }
+.sidebar {
+    position: absolute;
+    display: flex;
+    z-index: 201;
+    overflow: hidden;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.1);
+    width: 100vw;
+    font-size: 20px;
+}
